@@ -82,7 +82,8 @@
   --space-4xl: 6rem;
 
   /* Layout */
-  --container-max-width: 1320px;
+  --container-max-width: 1440px;
+  --container-padding: clamp(2rem, 5.5vw, 5.5rem);
   --header-height: 90px;
 
   /* Transitions */

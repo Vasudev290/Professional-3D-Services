@@ -47,8 +47,8 @@
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--space-xl);
-  padding-right: var(--space-xl);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 .hero-content {
@@ -113,21 +113,21 @@
   justify-content: center;
   background: var(--color-purple-btn);
   color: #ffffff;
-  padding: 12px 28px;
+  padding: 9px 28px;
   border-radius: var(--border-radius-full);
   font-family: var(--font-family-base);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   box-shadow: none;
   transition: transform var(--transition-fast), background var(--transition-fast);
 }
 
 .arrow-circle {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--border-radius-full);
   background: var(--color-purple-btn);
-  color: #ffffff;
+  color: #ffffff; 
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +152,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.08em;

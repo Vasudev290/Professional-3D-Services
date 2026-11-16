@@ -11,8 +11,8 @@
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--space-xl);
-  padding-right: var(--space-xl);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 .container-narrow {
@@ -157,11 +157,11 @@
   background: var(--color-purple-btn);
   color: #ffffff;
   font-family: var(--font-family-base);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   width: 153px;
   height: 43px;
-  padding: 0;
+  padding: 9px 28px;
   border-radius: var(--border-radius-full);
   text-decoration: none;
   display: inline-flex;
