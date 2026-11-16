@@ -256,86 +256,249 @@
 /* --------------------------------------------------------------------------
    Footer Layout
    -------------------------------------------------------------------------- */
+/* ==========================================================================
+   Site Footer (Figma Brand Vector & Exact Layout)
+   ========================================================================== */
 .site-footer {
-  background-color: #06080c;
+  background-color: #0c0e12;
   color: #94a3b8;
-  padding-top: var(--space-4xl);
-  padding-bottom: var(--space-2xl);
-  border-top: 1px solid #1e293b;
+  padding-top: 5rem;
+  padding-bottom: 2.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
 }
 
-.footer-top {
+.footer-main-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: var(--space-3xl);
-  margin-bottom: var(--space-3xl);
+  grid-template-columns: 2.2fr 1fr 1.15fr 1.4fr 1.35fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 3.5rem;
 }
 
-.footer-brand {
-  max-width: 380px;
+/* Col 1: Brand */
+.footer-col-brand {
+  max-width: 330px;
 }
 
-.footer-brand .brand-logo-img {
-  margin-bottom: var(--space-md);
+.footer-logo-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 1.25rem;
 }
 
-.footer-desc {
-  font-size: 1rem;
-  color: #94a3b8;
+.footer-logo-img {
+  display: block;
+  height: 38px;
+  width: auto;
+}
+
+.footer-brand-desc {
+  font-family: var(--font-family-base);
+  font-size: 0.85rem;
   line-height: 1.6;
-  margin-bottom: var(--space-lg);
+  color: #94a3b8;
+  margin: 0 0 1.75rem 0;
 }
 
-.footer-heading {
-  color: #ffffff;
-  font-size: 1.15rem;
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-lg);
+.footer-iso-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.footer-links {
+.footer-iso-badge {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.footer-iso-badge:hover {
+  opacity: 1;
+}
+
+/* Col 2 & 3: Nav Lists */
+.footer-col-nav {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
 }
 
-.footer-link {
-  font-size: 1rem;
-  color: #94a3b8;
-  transition: color var(--transition-fast), padding-left var(--transition-fast);
-}
-
-.footer-link:hover {
-  color: #ffffff;
-  padding-left: 4px;
-}
-
-.footer-contact-item {
+.footer-nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  align-items: flex-start;
-  gap: var(--space-sm);
-  font-size: 1rem;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.footer-nav-link {
+  font-family: var(--font-family-base);
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-nav-link:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+/* Col 4: Contact */
+.footer-col-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: var(--font-family-base);
+  font-size: 0.88rem;
   color: #94a3b8;
-  margin-bottom: var(--space-md);
+  line-height: 1.55;
 }
 
-.footer-contact-item svg {
-  color: #a855f7;
-  flex-shrink: 0;
-  margin-top: 3px;
+.footer-contact-line a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.footer-bottom {
-  padding-top: var(--space-2xl);
-  border-top: 1px solid #1e293b;
+.footer-contact-line a:hover {
+  color: #ffffff;
+}
+
+.footer-contact-gap {
+  height: 1.15rem;
+}
+
+.footer-schedule-days {
+  color: #94a3b8;
+}
+
+.footer-schedule-hours {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Col 5: Social Channels */
+.footer-col-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer-social-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.95rem;
-  color: #64748b;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  text-decoration: none;
+  font-family: var(--font-family-base);
+  font-size: 0.9rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.footer-bottom-links {
+.footer-social-item:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-social-label {
   display: flex;
-  gap: var(--space-lg);
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-social-icon {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-social-arrow {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-social-item:hover .footer-social-arrow {
+  transform: translate(2px, -2px);
+  color: #ffffff;
+}
+
+/* Middle Bracket Navigation Row */
+.footer-bracket-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.85rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 1.85rem;
+}
+
+.footer-bracket-item {
+  font-family: var(--font-family-base);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-bracket-item:hover {
+  color: #ffffff;
+}
+
+/* Bottom Row */
+.footer-bottom-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: var(--font-family-base);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.65;
+}
+
+.footer-legal-copy {
+  max-width: 820px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.footer-legal-copy a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-copy a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-since-tag {
+  white-space: nowrap;
+  font-family: var(--font-family-base);
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.04em;
 }

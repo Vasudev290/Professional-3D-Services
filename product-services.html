@@ -209,7 +209,7 @@
           </a>
         </div>
         <div class="nav-item">
-          <a href="#services" class="nav-link">
+          <a href="#industries" class="nav-link">
             <span>Working Verticals</span>
             <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </a>
@@ -220,8 +220,8 @@
           </a>
         </div>
         <div class="nav-item">
-          <a href="#faq" class="nav-link">
-            <span>Resources</span>
+          <a href="#showcase" class="nav-link">
+            <span>Portfolio</span>
             <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
           </a>
         </div>
@@ -262,9 +262,9 @@
     <div class="mobile-nav-links">
       <a href="#services" class="mobile-nav-link">3D Visualization</a>
       <a href="#services" class="mobile-nav-link">3D Solutions</a>
-      <a href="#services" class="mobile-nav-link">Working Verticals</a>
+      <a href="#industries" class="mobile-nav-link">Working Verticals</a>
       <a href="#why-us" class="mobile-nav-link">Customers</a>
-      <a href="#faq" class="mobile-nav-link">Resources</a>
+      <a href="#showcase" class="mobile-nav-link">Portfolio</a>
       <a href="#contact" class="mobile-nav-link">Contact</a>
     </div>
     <div class="mobile-nav-footer">
@@ -349,9 +349,7 @@
           <!-- Column 1: P3D Logo, Description, 2x2 Stats Matrix -->
           <div class="about-col about-col-intro">
             <img src="assets/images/hero/What-We/Group.svg" alt="ThePro3DStudio Brand Mark" class="about-p3d-logo" width="41" height="25">
-            <p class="about-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur posuere ipsum ac tincidunt. In congue placerat orci, vel elementum odio pretium et. Aenean blandit nibh eu orci tincidunt tempor. Quisque sit amet metus ut ipsum tristique pellentesque. Aenean sollicitudin ligula non vestibulum ultricies.
-            </p>
+          
             <div class="about-stats-matrix">
               <div class="about-stat-cell">
                 <div class="about-stat-num">100+</div>
@@ -452,352 +450,209 @@
     </section>
 
     <!-- ==========================================================================
-         Services Grid Section (Using Extracted Figma Product Renders)
+         Services Showcase Section (Figma Exact Implementation)
+         Alternating Layout: Block 1 (#f8f8f8), Block 2 (#ffffff), Block 3 (#f8f8f8)
          ========================================================================== -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge badge-primary">What We Do</div>
-          <h2 class="section-title">Comprehensive 3D Product Rendering Solutions</h2>
-          <p class="section-subtitle">
-            Tailored visual solutions built for eCommerce retailers, manufacturers, industrial designers, and digital marketing agencies worldwide.
-          </p>
-        </div>
-
-        <div class="grid grid-3">
-          <!-- Service Card 1: Footwear / Fashion Product -->
-          <article class="card service-card">
-            <div class="service-card-media">
-              <img src="assets/images/services/What We Do/Sec1.png" 
-                   alt="Footwear and Fashion 3D Product Rendering" 
-                   width="400" 
-                   height="240" 
-                   loading="lazy">
+    <section class="services-showcase-section" id="services">
+      <!-- Row 1: 3D Product Modeling & Texturing (Background #f8f8f8) -->
+      <div class="services-block services-bg-f8">
+        <div class="container">
+          <!-- Section Header (Figma Eyebrow & Headline) -->
+          <div class="services-header">
+            <div class="services-eyebrow">
+              <span>OUR SERVICES</span>
+              <svg class="eyebrow-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
             </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Footwear & Fashion CGI</h3>
-              <p class="service-card-desc">
-                High-definition texture replication for fabrics, mesh, knit, leather, and synthetic rubber outsoles with hyper-realistic fold physics.
-              </p>
-              <ul class="service-card-features">
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Micro-weave fabric displacement</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Dynamic colorway variations</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Seamless studio white background</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary">Request Quote</a>
-            </div>
-          </article>
-
-          <!-- Service Card 2: Packaging & Labeling -->
-          <article class="card service-card">
-            <div class="service-card-media">
-              <img src="assets/images/services/What We Do/Sec2.png" 
-                   alt="Packaging and Pouch Label 3D Modeling" 
-                   width="400" 
-                   height="240" 
-                   loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Packaging & Label Mockups</h3>
-              <p class="service-card-desc">
-                Photorealistic stand-up pouches, bottles, cartons, and blister packs with matte, metallic foil, and spot-UV embossed textures.
-              </p>
-              <ul class="service-card-features">
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Exact 2D dieline to 3D folding</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Foil stamping and gloss reflections</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Pre-print marketing visuals</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary">Request Quote</a>
-            </div>
-          </article>
-
-          <!-- Service Card 3: Retail & Exhibition Kiosks -->
-          <article class="card service-card">
-            <div class="service-card-media">
-              <img src="assets/images/services/What We Do/Sec3.png" 
-                   alt="Retail Kiosk and Exhibition Display 3D Visualization" 
-                   width="400" 
-                   height="240" 
-                   loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Retail Stalls & Kiosks</h3>
-              <p class="service-card-desc">
-                Architectural display structures, cosmetic stands, and trade show booths visualized with accurate ambient commercial lighting.
-              </p>
-              <ul class="service-card-features">
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Accurate architectural scale</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Integrated backlit signage</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Merchandising display mockups</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary">Request Quote</a>
-            </div>
-          </article>
-
-          <!-- Service Card 4: Game Art & Sci-Fi Characters -->
-          <article class="card service-card">
-            <div class="service-card-media">
-              <img src="assets/images/services/What We Do/Sec4.png" 
-                   alt="3D Character Modeling and Game Asset Art" 
-                   width="400" 
-                   height="240" 
-                   loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Game Art & Character Design</h3>
-              <p class="service-card-desc">
-                High-poly to low-poly baking, rigging-ready topography, hard-surface armor, and stylized digital character modeling for entertainment.
-              </p>
-              <ul class="service-card-features">
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> PBR texture maps (Albedo, Normal, Rough)</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Unreal Engine & Unity optimized</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Sub-division surface modeling</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary">Request Quote</a>
-            </div>
-          </article>
-
-          <!-- Service Card 5: Furniture & Architectural Decor -->
-          <article class="card service-card">
-            <div class="service-card-media">
-              <img src="assets/images/hero/hero-bg.png" 
-                   alt="Furniture and Home Decor 3D Modeling and Rendering" 
-                   width="400" 
-                   height="240" 
-                   loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">Furniture & Interior Decor</h3>
-              <p class="service-card-desc">
-                Accurate physical material replication for polished hardwoods, rattan weaving, velvet upholstery, and brass hardware in styled rooms.
-              </p>
-              <ul class="service-card-features">
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Contextual room scenes</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Unlimited wood & fabric finishes</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Catalog batch rendering</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary">Request Quote</a>
-            </div>
-          </article>
-
-          <!-- Service Card 6: Interactive 360 & Augmented Reality -->
-          <article class="card service-card">
-            <div class="service-card-media">
-              <img src="assets/images/services/What We Do/Sec8.png" 
-                   alt="360 Degree Interactive and AR 3D Assets" 
-                   width="400" 
-                   height="240" 
-                   loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 class="service-card-title">360° Spins & AR Assets</h3>
-              <p class="service-card-desc">
-                WebGL interactive viewer assets and lightweight USDZ/GLB formats configured for instant "View in Your Space" augmented reality.
-              </p>
-              <ul class="service-card-features">
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Shopify & Amazon 3D ready</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Smooth 360-degree rotation</li>
-                <li><svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Dramatic reduction in return rates</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary">Request Quote</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Process Section ("How We Work")
-         ========================================================================== -->
-    <section class="section section-bg-subtle" id="process">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge badge-primary">Our Process</div>
-          <h2 class="section-title">Streamlined 4-Step Rendering Workflow</h2>
-          <p class="section-subtitle">
-            From initial CAD ingestion to final delivery, our quality-controlled pipeline guarantees rapid execution and precision results.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <!-- Step 1 -->
-          <div class="process-step">
-            <div class="process-number">01</div>
-            <h3 class="process-title">Submit Assets & Brief</h3>
-            <p class="process-desc">
-              Share your 3D CAD files, design blueprints, or reference photos alongside material and lighting specifications.
-            </p>
+            <h2 class="services-main-title">Experience top-class 3D design &amp;<br>visualization services</h2>
           </div>
 
-          <!-- Step 2 -->
-          <div class="process-step">
-            <div class="process-number">02</div>
-            <h3 class="process-title">Modeling & Texturing</h3>
-            <p class="process-desc">
-              Our 3D specialists sculpt geometry, apply high-res PBR textures, and set up realistic digital materials.
-            </p>
-          </div>
+          <div class="services-row">
+            <!-- Left: Text Content & Features -->
+            <div class="services-content-col">
+              <h3 class="services-heading">Promote products with accurate detail using our 3D modeling and texturing services!</h3>
+              
+              <div class="services-features-list">
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">Highly-Detailed 3D Product Models</h4>
+                    <p class="services-feature-desc">Try our <a href="#contact">3D product modeling services</a>! Get detailed eCommerce 3D models, furniture models textured with acrylic, wood, foam, rubber, clay, metal, etc.</p>
+                  </div>
+                </div>
 
-          <!-- Step 3 -->
-          <div class="process-step">
-            <div class="process-number">03</div>
-            <h3 class="process-title">Preview & Revisions</h3>
-            <p class="process-desc">
-              Review draft camera angles and lighting setups. Request tweaks and adjustments before final high-resolution rendering.
-            </p>
-          </div>
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">3D models for 360-degree viewing</h4>
+                    <p class="services-feature-desc">Boost your product listings with 3D model spins and <a href="#contact">interactive product 360-degree views</a>.</p>
+                  </div>
+                </div>
 
-          <!-- Step 4 -->
-          <div class="process-step">
-            <div class="process-number">04</div>
-            <h3 class="process-title">Final 4K Delivery</h3>
-            <p class="process-desc">
-              Receive high-resolution 4K/8K images, 360 spin files, and optimized AR 3D assets ready for deployment.
-            </p>
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">High-quality 3D models for AR technology</h4>
+                    <p class="services-feature-desc">Let your products be viewed on any AR platforms, applications, or via headsets with our <a href="#contact">3D modeling for AR</a>.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn-services-pill">
+                <span>Try Our Services</span>
+                <svg class="pill-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Right: Image of 3D Designer Modeling Drill -->
+            <div class="services-image-col">
+              <div class="services-image-frame">
+                <img src="assets/images/services/service-modeling.png" 
+                     alt="Promote products with accurate detail using our 3D modeling and texturing services" 
+                     width="840" 
+                     height="550" 
+                     class="services-img-rounded"
+                     loading="lazy">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ==========================================================================
-         Why Choose Us / Value Proposition
-         ========================================================================== -->
-    <section class="section" id="why-us">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge badge-primary">The Pro Difference</div>
-          <h2 class="section-title">Why Brands Choose ThePro3DStudio</h2>
-          <p class="section-subtitle">
-            Experience the flexibility and speed of digital rendering over traditional commercial product photography.
-          </p>
-        </div>
+      <!-- Row 2: Custom 3D & Lifestyle Interiors (Background #ffffff) -->
+      <div class="services-block services-bg-white">
+        <div class="container">
+          <div class="services-row services-row-reverse">
+            <!-- Left: Image of Lifestyle Couch Scene (Seamless White Background) -->
+            <div class="services-image-col">
+              <div class="services-image-frame">
+                <img src="assets/images/services/service-lifestyle.jpg" 
+                     alt="Professional Custom 3D services and high-end renders in custom lifestyle" 
+                     width="879" 
+                     height="600" 
+                     class="services-img-lifestyle"
+                     loading="lazy">
+              </div>
+            </div>
 
-        <div class="grid grid-3">
-          <div class="card">
-            <h3 class="service-card-title">Photorealistic Detail</h3>
-            <p class="service-card-desc">
-              Cutting-edge ray tracing engines replicate true-to-life reflections, surface micro-textures, and optical light refraction.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="service-card-title">Infinite Flexibility</h3>
-            <p class="service-card-desc">
-              Need a new colorway or environment? Change materials, backgrounds, and angles in minutes without booking a new studio session.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="service-card-title">Pre-Production Visuals</h3>
-            <p class="service-card-desc">
-              Start marketing and pre-selling your products before tooling and manufacturing even begin using accurate CAD renders.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="service-card-title">Strict NDA Protection</h3>
-            <p class="service-card-desc">
-              Your unreleased prototypes and trade secrets are safe. We enforce strict encryption and standard mutual NDAs.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="service-card-title">Dedicated Account Lead</h3>
-            <p class="service-card-desc">
-              Direct communication with senior 3D project managers to guarantee milestone tracking and rapid feedback loops.
-            </p>
-          </div>
-          <div class="card">
-            <h3 class="service-card-title">Scalable High-Volume Output</h3>
-            <p class="service-card-desc">
-              Whether you need 5 hero product shots or 5,000 catalog SKUs, our distributed render farms deliver on time.
-            </p>
+            <!-- Right: Text Content & Features -->
+            <div class="services-content-col">
+              <h3 class="services-heading">Professional Custom 3D services and high-end renders in custom lifestyle!</h3>
+              
+              <div class="services-features-list">
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">Architecture 3D Models</h4>
+                    <p class="services-feature-desc">Top-notch <a href="#contact">architecture 3D modeling services</a> for residential and commercial architecture projects, developed by 3D experts.</p>
+                  </div>
+                </div>
+
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">Lifestyle 3D Designs</h4>
+                    <p class="services-feature-desc">Get customized lifestyle 3D design images created with advanced techniques and product models incorporated within custom 3D interiors.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn-services-pill">
+                <span>Get Started</span>
+                <svg class="pill-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ==========================================================================
-         FAQ Accordion Section (Task 1 & Task 2)
-         ========================================================================== -->
-    <section class="section section-bg-subtle" id="faq">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge badge-primary">Got Questions?</div>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">
-            Find answers to common questions about our 3D product rendering pipeline, file formats, and delivery timelines.
-          </p>
-        </div>
+      <!-- Row 3: 3D Sculpting & Print-Ready Models (Background #f8f8f8) -->
+      <div class="services-block services-bg-f8">
+        <div class="container">
+          <div class="services-row">
+            <!-- Left: Text Content & Features -->
+            <div class="services-content-col">
+              <h3 class="services-heading">Stellar 3D sculpting and 3D print-ready model creation services, crafted by experts!</h3>
+              
+              <div class="services-features-list">
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">3D Sculptures</h4>
+                    <p class="services-feature-desc">Get the best custom sculptures with our world-class <a href="#contact">3D sculpting services</a> at an affordable price, crafted by our expert 3D sculptors.</p>
+                  </div>
+                </div>
 
-        <div class="accordion" id="faqAccordion">
-          <!-- FAQ Item 1 -->
-          <div class="accordion-item active">
-            <button class="accordion-header" aria-expanded="true">
-              <span>What input files are required to begin a 3D product rendering project?</span>
-              <span class="accordion-icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-            </button>
-            <div class="accordion-content" style="max-height: 200px;">
-              <div class="accordion-body">
-                We accept standard 3D CAD formats including STEP, STP, OBJ, FBX, IGES, STL, and 3DS. If CAD models are not available, you can share reference photographs, dimension sketches, blueprint drawings, and material specifications.
+                <div class="services-feature-item">
+                  <div class="services-feature-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7928ca" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"></circle>
+                      <polyline points="8.5 12.5 11 15 15.5 9.5"></polyline>
+                    </svg>
+                  </div>
+                  <div class="services-feature-text">
+                    <h4 class="services-feature-title">3D Print-Ready Models</h4>
+                    <p class="services-feature-desc">Skilled 3D artists at our reliable 3D design firm deliver the <a href="#contact">3D print models</a> in industry-standard file formats compatible with all 3D printers.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- FAQ Item 2 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>What is the typical turnaround time for 3D product renders?</span>
-              <span class="accordion-icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-body">
-                Standard product renders are delivered within 24 to 48 business hours for initial milestones. Complex lifestyle environments or multi-angle product catalogs are scoped with milestone schedules to match your launch date.
-              </div>
+              <a href="#contact" class="btn-services-pill">
+                <span>Talk To Us</span>
+                <svg class="pill-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
             </div>
-          </div>
 
-          <!-- FAQ Item 3 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Can you provide 3D models optimized for Augmented Reality (AR) and eCommerce?</span>
-              <span class="accordion-icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-body">
-                Yes, we produce lightweight, low-poly GLB/glTF formats optimized for web AR, Shopify, Amazon 3D, and iOS Quick Look (USDZ) without sacrificing photorealistic texture quality.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 4 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>Are client design files and proprietary intellectual property secure?</span>
-              <span class="accordion-icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-body">
-                Absolutely. We enforce strict data confidentiality policies and routinely sign standard Non-Disclosure Agreements (NDAs) before accepting project files. Your 3D models and proprietary designs remain 100% confidential.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ Item 5 -->
-          <div class="accordion-item">
-            <button class="accordion-header" aria-expanded="false">
-              <span>How many revision cycles are included in your rendering services?</span>
-              <span class="accordion-icon" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </span>
-            </button>
-            <div class="accordion-content">
-              <div class="accordion-body">
-                We provide iterative preview milestones (camera angle approval, material texturing, and final high-resolution render) with revisions included to ensure the final output exceeds your expectations.
+            <!-- Right: Image of 3D Printer & Sculpted Vases -->
+            <div class="services-image-col">
+              <div class="services-image-frame">
+                <img src="assets/images/services/service-3d-printer.png" 
+                     alt="Stellar 3D sculpting and 3D print-ready model creation services" 
+                     width="907" 
+                     height="750" 
+                     class="services-img-printer"
+                     loading="lazy">
               </div>
             </div>
           </div>
@@ -806,159 +661,661 @@
     </section>
 
     <!-- ==========================================================================
-         Contact Form Section (Task 1 & Task 3)
+         Working Verticals ("Industries We Specialized In")
+         (Replaces Process Section with Figma Exact Visual Carousel)
          ========================================================================== -->
-    <section class="section contact-section" id="contact">
+    <section class="industries-section" id="industries">
+      <!-- Hidden anchor alias for legacy #process links -->
+      <span id="process" style="display: block; position: relative; top: -100px; visibility: hidden;"></span>
+
       <div class="container">
-        <div class="contact-layout">
-          <!-- Left Column: Company Credentials & Contact Details -->
-          <div class="contact-info-card">
-            <div class="badge badge-dark">Let's Connect</div>
-            <h2 class="contact-info-title">Ready to Transform Your Product Imagery?</h2>
-            <p class="contact-info-desc">
-              Send us your project scope, reference files, or CAD drawings. Our 3D visualization experts will analyze your requirements and provide a free quotation within 24 hours.
-            </p>
+        <!-- Eyebrow & Title -->
+        <div class="industries-header">
+          <div class="industries-eyebrow">
+            <span>WORKING VERTICALS</span>
+            <svg class="eyebrow-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+          <h2 class="industries-title">Industries We Specialized in</h2>
+        </div>
 
-            <div class="contact-details-list">
-              <div class="contact-detail-row">
-                <div class="contact-detail-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </div>
-                <div class="contact-detail-text">
-                  <h4>Email Us</h4>
-                  <p><a href="mailto:hrd@mapsystems.com">hrd@mapsystems.com</a></p>
-                </div>
+        <!-- Carousel / Slider -->
+        <div class="industries-carousel-wrapper">
+          <button type="button" class="industries-nav-btn industries-nav-prev" id="indPrevBtn" aria-label="Previous industry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="industries-slider-track" id="industriesTrack">
+            <!-- 1. Architecture / Engineering -->
+            <article class="industry-card">
+              <div class="industry-card-media">
+                <img src="assets/images/hero/Industries/Sec1.png" 
+                     alt="Architecture / Engineering 3D Modeling" 
+                     width="225" 
+                     height="300" 
+                     loading="lazy">
               </div>
+              <h3 class="industry-card-title">Architecture / Engineering</h3>
+            </article>
 
-              <div class="contact-detail-row">
-                <div class="contact-detail-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </div>
-                <div class="contact-detail-text">
-                  <h4>Call Our Direct Line</h4>
-                  <p><a href="tel:+18003337890">+1 (800) 333-7890</a></p>
-                </div>
+            <!-- 2. eCommerce -->
+            <article class="industry-card">
+              <div class="industry-card-media">
+                <img src="assets/images/hero/Industries/Sec2.png" 
+                     alt="eCommerce 3D Product Rendering" 
+                     width="225" 
+                     height="300" 
+                     loading="lazy">
               </div>
+              <h3 class="industry-card-title">eCommerce</h3>
+            </article>
 
-              <div class="contact-detail-row">
-                <div class="contact-detail-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                </div>
-                <div class="contact-detail-text">
-                  <h4>Global Delivery Hubs</h4>
-                  <p>Bangalore, India &bull; North Carolina, USA</p>
-                </div>
+            <!-- 3. Fashion / Apparels -->
+            <article class="industry-card">
+              <div class="industry-card-media">
+                <img src="assets/images/hero/Industries/Sec3.png" 
+                     alt="Fashion / Apparels 3D CGI" 
+                     width="225" 
+                     height="300" 
+                     loading="lazy">
               </div>
-            </div>
+              <h3 class="industry-card-title">Fashion / Apparels</h3>
+            </article>
 
-            <ul class="contact-trust-badges">
-              <li><svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> 100% Privacy Protected with Mutual NDAs</li>
-              <li><svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Guaranteed Response Within 24 Business Hours</li>
-              <li><svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Free Pre-Production Technical Assessment</li>
-            </ul>
+            <!-- 4. Furniture / Appliances -->
+            <article class="industry-card">
+              <div class="industry-card-media">
+                <img src="assets/images/hero/Industries/Sec4.png" 
+                     alt="Furniture / Appliances 3D Renders" 
+                     width="225" 
+                     height="300" 
+                     loading="lazy">
+              </div>
+              <h3 class="industry-card-title">Furniture / Appliances</h3>
+            </article>
+
+            <!-- 5. Sports / Fitness -->
+            <article class="industry-card">
+              <div class="industry-card-media">
+                <img src="assets/images/hero/Industries/Sec5.png" 
+                     alt="Sports / Fitness 3D Product Design" 
+                     width="225" 
+                     height="300" 
+                     loading="lazy">
+              </div>
+              <h3 class="industry-card-title">Sports / Fitness</h3>
+            </article>
+
+            <!-- 6. Gaming & Entertainment -->
+            <article class="industry-card">
+              <div class="industry-card-media">
+                <img src="assets/images/hero/Industries/Sec6.png" 
+                     alt="Gaming & Entertainment 3D Assets" 
+                     width="225" 
+                     height="300" 
+                     loading="lazy">
+              </div>
+              <h3 class="industry-card-title">Gaming &amp; Entertainment</h3>
+            </article>
           </div>
 
-          <!-- Right Column: Interactive Contact Form -->
-          <div class="contact-form-container">
-            <!-- Dynamic Submission Status Alerts -->
-            <div id="formSuccessAlert" class="form-alert" role="alert" style="display: none;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              <span id="formSuccessMessage">Thank you! Your inquiry has been submitted successfully. Our team will contact you within 24 hours.</span>
+          <button type="button" class="industries-nav-btn industries-nav-next" id="indNextBtn" aria-label="Next industry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Insights & Success Stories Section ("Insights from Industry Partners")
+         (Replaces Why Choose Us with Figma Exact Implementation)
+         ========================================================================== -->
+    <section class="insights-section" id="why-us">
+      <!-- Hidden anchor alias for #insights -->
+      <span id="insights" style="display: block; position: relative; top: -100px; visibility: hidden;"></span>
+
+      <div class="container">
+        <!-- Header: Eyebrow + Title on Left, Description on Right -->
+        <div class="insights-header">
+          <div class="insights-header-left">
+            <div class="insights-eyebrow">
+              <span>SUCCESS STORIES</span>
+              <svg class="eyebrow-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
             </div>
-
-            <div id="formErrorAlert" class="form-alert" role="alert" style="display: none;">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
-              <span id="formErrorMessage">Please correct the highlighted errors before submitting.</span>
-            </div>
-
-            <!-- Form -->
-            <form id="contactForm" action="backend/process-form.php" method="POST" novalidate>
-              <!-- Anti-Spam Honeypot Field (Task 3) -->
-              <div class="hp-field" aria-hidden="true">
-                <label for="website_hp">Leave this field blank</label>
-                <input type="text" name="website_hp" id="website_hp" tabindex="-1" autocomplete="off">
-              </div>
-
-              <!-- Duplicate Submission Prevention Token (Task 3) -->
-              <input type="hidden" name="form_token" id="formToken" value="">
-
-              <!-- Row 1: Full Name & Email -->
-              <div class="form-grid-2">
-                <div class="form-group">
-                  <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
-                  <input type="text" id="fullName" name="fullName" class="form-control" placeholder="John Doe" required autocomplete="name">
-                  <span class="field-error" id="fullNameError">Please enter your full name (minimum 2 characters).</span>
-                </div>
-
-                <div class="form-group">
-                  <label for="email" class="form-label">Business Email <span class="required-star">*</span></label>
-                  <input type="email" id="email" name="email" class="form-control" placeholder="john@company.com" required autocomplete="email">
-                  <span class="field-error" id="emailError">Please enter a valid business email address.</span>
-                </div>
-              </div>
-
-              <!-- Row 2: Phone Number & Service Required -->
-              <div class="form-grid-2">
-                <div class="form-group">
-                  <label for="phone" class="form-label">Phone Number <span class="required-star">*</span></label>
-                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 (555) 000-0000" required autocomplete="tel">
-                  <span class="field-error" id="phoneError">Please enter a valid phone number (minimum 7 digits).</span>
-                </div>
-
-                <div class="form-group">
-                  <label for="serviceType" class="form-label">Service Required <span class="required-star">*</span></label>
-                  <select id="serviceType" name="serviceType" class="form-control" required>
-                    <option value="" disabled selected>Select a Service</option>
-                    <option value="Footwear & Fashion CGI">Footwear & Fashion CGI</option>
-                    <option value="Packaging & Label Mockups">Packaging & Label Mockups</option>
-                    <option value="Retail Stalls & Kiosks">Retail Stalls & Kiosks</option>
-                    <option value="Game Art & Character Design">Game Art & Character Design</option>
-                    <option value="Furniture & Interior Decor">Furniture & Interior Decor</option>
-                    <option value="360° Spins & AR Assets">360° Spins & AR Assets</option>
-                    <option value="Other Custom 3D Services">Other Custom 3D Services</option>
-                  </select>
-                  <span class="field-error" id="serviceTypeError">Please select a service from the list.</span>
-                </div>
-              </div>
-
-              <!-- Row 3: Estimated Budget / Timeline -->
-              <div class="form-group">
-                <label for="budget" class="form-label">Project Budget Range (Optional)</label>
-                <select id="budget" name="budget" class="form-control">
-                  <option value="" selected>Select Budget Range (USD)</option>
-                  <option value="Under $1,000">Under $1,000</option>
-                  <option value="$1,000 - $3,000">$1,000 - $3,000</option>
-                  <option value="$3,000 - $10,000">$3,000 - $10,000</option>
-                  <option value="$10,000+">$10,000+</option>
-                </select>
-              </div>
-
-              <!-- Row 4: Project Details & Requirements -->
-              <div class="form-group">
-                <label for="message" class="form-label">Project Brief & Requirements <span class="required-star">*</span></label>
-                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your 3D modeling scope, number of SKUs, required angles, and expected timeline..." required></textarea>
-                <span class="field-error" id="messageError">Please provide project details (minimum 10 characters).</span>
-              </div>
-
-              <!-- Submit Button -->
-              <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
-                <span id="submitBtnText">Submit Inquiry & Get Free Quote</span>
-                <span id="submitSpinner" style="display:none; margin-left:8px;">⏳ Sending...</span>
-              </button>
-            </form>
+            <h2 class="insights-title">Insights from<br>Industry Partners</h2>
+          </div>
+          <div class="insights-header-right">
+            <p class="insights-header-desc">
+              Backed by a team of vetted 3D modelers, renderers, and professionally trained 3D texturing artists, ThePro3DStudio is an industry leader in providing high-end 3D production.
+            </p>
           </div>
         </div>
 
-        <!-- Pre-Footer Call to Action Banner -->
-        <div class="cta-banner">
-          <h2 class="cta-banner-title">Bring Your Products to Life Today</h2>
-          <p class="cta-banner-desc">
-            Partner with the dedicated 3D visualization studio trusted by leading brands across North America, Europe, and Asia.
-          </p>
-          <div class="cta-banner-actions">
-            <a href="#contact" class="btn btn-secondary">Request Immediate Assessment</a>
-            <a href="tel:+18003337890" class="btn btn-outline-white">Call Sales: +1 (800) 333-7890</a>
+        <!-- 2-Column Asymmetric Grid matching Figma (626px vs 1056px exact proportions) -->
+        <div class="insights-grid">
+          <!-- Card 1 (Row 1 Left: Headphones - 626x352) -->
+          <article class="insights-card">
+            <div class="insights-card-media">
+              <img src="assets/images/hero/Insights/Sec1.png" 
+                   alt="Provided Unique 3D Product Model Designs To An UK-Based Electronic Appliance Manufacturer" 
+                   width="626" 
+                   height="352" 
+                   loading="lazy">
+            </div>
+            <div class="insights-card-body">
+              <h3 class="insights-card-title">Provided Unique 3D Product Model Designs To An UK-Based Electronic Appliance Manufacturer</h3>
+              <div class="insights-card-tags">
+                <span class="insight-tag">3D PRINT READY MODELING</span>
+                <span class="insight-tag">EDITORIAL</span>
+                <span class="insight-tag">SPATIAL CONCEPT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 (Row 1 Right: Drone - 1056x594) -->
+          <article class="insights-card">
+            <div class="insights-card-media">
+              <img src="assets/images/hero/Insights/Sec2.png" 
+                   alt="Offered Bathroom Fixtures 3D Textured Models For A Manufacturing Firm" 
+                   width="1056" 
+                   height="594" 
+                   loading="lazy">
+            </div>
+            <div class="insights-card-body">
+              <h3 class="insights-card-title">Offered Bathroom Fixtures 3D Textured Models For A Manufacturing Firm</h3>
+              <div class="insights-card-tags">
+                <span class="insight-tag">3D PRINT READY MODELING</span>
+                <span class="insight-tag">EDITORIAL</span>
+                <span class="insight-tag">SPATIAL CONCEPT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 (Row 2 Left: Bedroom - 626x417) -->
+          <article class="insights-card">
+            <div class="insights-card-media">
+              <img src="assets/images/hero/Insights/Sec3.png" 
+                   alt="Case Study On Architectural 3D Modeling For UK Based Real Estate Client" 
+                   width="626" 
+                   height="417" 
+                   loading="lazy">
+            </div>
+            <div class="insights-card-body">
+              <h3 class="insights-card-title">Case Study On Architectural 3D Modeling For UK Based Real Estate Client</h3>
+              <div class="insights-card-tags">
+                <span class="insight-tag">3D PRINT READY MODELING</span>
+                <span class="insight-tag">EDITORIAL</span>
+                <span class="insight-tag">SPATIAL CONCEPT</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 (Row 2 Right: Nightstand - 1056x704) -->
+          <article class="insights-card">
+            <div class="insights-card-media">
+              <img src="assets/images/hero/Insights/Sec4.png" 
+                   alt="Case Study On 3D Furniture Design For A Leading UK Company" 
+                   width="1056" 
+                   height="704" 
+                   loading="lazy">
+            </div>
+            <div class="insights-card-body">
+              <h3 class="insights-card-title">Case Study On 3D Furniture Design For A Leading UK Company</h3>
+              <div class="insights-card-tags">
+                <span class="insight-tag">3D PRINT READY MODELING</span>
+                <span class="insight-tag">EDITORIAL</span>
+                <span class="insight-tag">SPATIAL CONCEPT</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Showcase / Portfolio Section ("A Showcase of Our 3D Excellence")
+         ========================================================================== -->
+    <section class="showcase-section" id="showcase">
+      <!-- Hidden anchor alias for legacy #faq links -->
+      <span id="faq" style="display: block; position: relative; top: -100px; visibility: hidden;"></span>
+
+      <div class="container">
+        <!-- Header: Eyebrow + Title on Left, Description on Right -->
+        <div class="showcase-header">
+          <div class="showcase-header-left">
+            <div class="showcase-eyebrow">
+              <span>PORTFOLIO</span>
+              <svg class="eyebrow-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+            <h2 class="showcase-title">A Showcase of<br>Our 3D Excellence</h2>
           </div>
+          <div class="showcase-header-right">
+            <p class="showcase-header-desc">
+              Explore a curated showcase of our 3D expertise, from photorealistic renders and product visualizations to immersive experiences and animation. Each project combines creativity, precision, and technical excellence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slider Wrapper with Side & Bottom Controls -->
+        <div class="showcase-slider-wrapper">
+          <!-- Floating Side Navigation Buttons -->
+          <button type="button" class="showcase-side-nav showcase-side-prev" id="showcaseSidePrev" aria-label="Previous showcase project">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="showcase-slider-track" id="showcaseTrack">
+            <!-- Card 1: Bedroom -->
+            <article class="showcase-card">
+              <div class="showcase-card-media">
+                <span class="showcase-card-badge">3D Interior Modeling</span>
+                <img src="assets/images/hero/Showcase/Sec1.png" 
+                     alt="3D Interior Bedroom Modeling" 
+                     width="400" 
+                     height="550" 
+                     loading="lazy">
+              </div>
+            </article>
+
+            <!-- Card 2: Bathroom -->
+            <article class="showcase-card">
+              <div class="showcase-card-media">
+                <span class="showcase-card-badge">3D Architectural Texturing</span>
+                <img src="assets/images/hero/Showcase/Sec2.png" 
+                     alt="3D Architectural Bathroom Texturing" 
+                     width="400" 
+                     height="550" 
+                     loading="lazy">
+              </div>
+            </article>
+
+            <!-- Card 3: Watch -->
+            <article class="showcase-card">
+              <div class="showcase-card-media">
+                <span class="showcase-card-badge">3D Product Modeling</span>
+                <img src="assets/images/hero/Showcase/Sec3.png" 
+                     alt="3D Product Luxury Watch Modeling" 
+                     width="400" 
+                     height="550" 
+                     loading="lazy">
+              </div>
+            </article>
+
+            <!-- Card 4: Living Room -->
+            <article class="showcase-card">
+              <div class="showcase-card-media">
+                <span class="showcase-card-badge">3D Furniture Modeling</span>
+                <img src="assets/images/hero/Showcase/Sec4.png" 
+                     alt="3D Furniture Living Room Modeling" 
+                     width="400" 
+                     height="550" 
+                     loading="lazy">
+              </div>
+            </article>
+
+            <!-- Card 5: Office Setup -->
+            <article class="showcase-card">
+              <div class="showcase-card-media">
+                <span class="showcase-card-badge">3D Commercial Rendering</span>
+                <img src="assets/images/hero/Showcase/Sec5.png" 
+                     alt="3D Commercial Office Space Rendering" 
+                     width="400" 
+                     height="550" 
+                     loading="lazy">
+              </div>
+            </article>
+
+            <!-- Card 6: Villa Exterior -->
+            <article class="showcase-card">
+              <div class="showcase-card-media">
+                <span class="showcase-card-badge">3D Exterior Architecture</span>
+                <img src="assets/images/hero/Showcase/Sec6.png" 
+                     alt="3D Exterior Villa Architecture" 
+                     width="400" 
+                     height="550" 
+                     loading="lazy">
+              </div>
+            </article>
+          </div>
+
+          <button type="button" class="showcase-side-nav showcase-side-next" id="showcaseSideNext" aria-label="Next showcase project">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Bottom Controls with Pagination Dots and Arrow Buttons -->
+        <div class="showcase-controls">
+          <button type="button" class="showcase-arrow showcase-arrow-prev" id="showcasePrevBtn" aria-label="Previous slide">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="showcase-dots" id="showcaseDots">
+            <button type="button" class="showcase-dot active" data-index="0" aria-label="Go to slide 1"></button>
+            <button type="button" class="showcase-dot" data-index="1" aria-label="Go to slide 2"></button>
+            <button type="button" class="showcase-dot" data-index="2" aria-label="Go to slide 3"></button>
+            <button type="button" class="showcase-dot" data-index="3" aria-label="Go to slide 4"></button>
+            <button type="button" class="showcase-dot" data-index="4" aria-label="Go to slide 5"></button>
+            <button type="button" class="showcase-dot" data-index="5" aria-label="Go to slide 6"></button>
+          </div>
+
+          <button type="button" class="showcase-arrow showcase-arrow-next" id="showcaseNextBtn" aria-label="Next slide">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonials Section ("Hear what our Clients have to say")
+         (Replaces Contact Form Section with Figma Exact Implementation)
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <!-- Hidden anchor alias for legacy #contact links -->
+      <span id="contact" style="display: block; position: relative; top: -100px; visibility: hidden;"></span>
+
+      <div class="container">
+        <!-- Header: Eyebrow + Title on Left, View All Reviews on Right -->
+        <div class="testimonials-header">
+          <div class="testimonials-header-left">
+            <div class="testimonials-eyebrow">
+              <span>TESTIMONIALS</span>
+              <svg class="eyebrow-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+            <h2 class="testimonials-title">Hear what our Clients have to say</h2>
+          </div>
+          <div class="testimonials-header-right">
+            <a href="#testimonials" class="btn-view-reviews">
+              <span>View All Reviews</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Carousel / Slider Track -->
+        <div class="testimonials-slider-wrapper">
+          <button type="button" class="testimonials-nav-btn testimonials-nav-prev" id="testPrevBtn" aria-label="Previous testimonial">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="testimonials-slider-track" id="testimonialsTrack">
+            <!-- Card 1 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card-top">
+                <img src="assets/images/testimonials/client-avatar.png" alt="Client Avatar" width="48" height="48" class="testimonial-avatar" loading="lazy">
+                <div class="testimonial-client-meta">
+                  <div class="testimonial-client-role">CTO</div>
+                  <div class="testimonial-client-company">NexusTech</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin vitae at eros.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card-top">
+                <img src="assets/images/testimonials/client-avatar.png" alt="Client Avatar" width="48" height="48" class="testimonial-avatar" loading="lazy">
+                <div class="testimonial-client-meta">
+                  <div class="testimonial-client-role">Head of AI</div>
+                  <div class="testimonial-client-company">Synthetic Systems</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin vitae at eros.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card-top">
+                <img src="assets/images/testimonials/client-avatar.png" alt="Client Avatar" width="48" height="48" class="testimonial-avatar" loading="lazy">
+                <div class="testimonial-client-meta">
+                  <div class="testimonial-client-role">Head of AI</div>
+                  <div class="testimonial-client-company">Synthetic Systems</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin vitae at eros.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card-top">
+                <img src="assets/images/testimonials/client-avatar.png" alt="Client Avatar" width="48" height="48" class="testimonial-avatar" loading="lazy">
+                <div class="testimonial-client-meta">
+                  <div class="testimonial-client-role">Head of AI</div>
+                  <div class="testimonial-client-company">Synthetic Systems</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin vitae at eros.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card-top">
+                <img src="assets/images/testimonials/client-avatar.png" alt="Client Avatar" width="48" height="48" class="testimonial-avatar" loading="lazy">
+                <div class="testimonial-client-meta">
+                  <div class="testimonial-client-role">VP of Product</div>
+                  <div class="testimonial-client-company">Vanguard 3D</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin vitae at eros.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="testimonial-card">
+              <div class="testimonial-card-top">
+                <img src="assets/images/testimonials/client-avatar.png" alt="Client Avatar" width="48" height="48" class="testimonial-avatar" loading="lazy">
+                <div class="testimonial-client-meta">
+                  <div class="testimonial-client-role">Design Director</div>
+                  <div class="testimonial-client-company">AeroDynamics</div>
+                </div>
+              </div>
+              <p class="testimonial-quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin vitae at eros.
+              </p>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+            </article>
+          </div>
+
+          <button type="button" class="testimonials-nav-btn testimonials-nav-next" id="testNextBtn" aria-label="Next testimonial">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Ready to Architect Your Digital Legacy (CTA Section from Figma)
+         ========================================================================== -->
+    <section class="ready-cta-section" id="ready">
+      <div class="container">
+        <div class="ready-cta-grid">
+          <!-- Left Column: Headline, Description & Dual-Pill Journey Button -->
+          <div class="ready-cta-left">
+            <h2 class="ready-cta-title">Ready to architect<br>your digital legacy?</h2>
+            <p class="ready-cta-desc">
+              Let's discuss how we can turn your vision into an impactful, human-centered digital reality.
+            </p>
+            <div class="cta-journey-group">
+              <a href="#contact" class="btn-journey-pill">Start your design journey</a>
+              <a href="#contact" class="btn-journey-circle" aria-label="Start your design journey">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Card with Avatar Visors & Contact Overlay -->
+          <div class="ready-cta-right">
+            <div class="ready-card-wrap">
+              <img src="assets/images/hero/Ready/orisa.png" 
+                   alt="Digital Reality Visors - Great digital experiences begin with a conversation" 
+                   width="689" 
+                   height="457" 
+                   class="ready-card-img"
+                   loading="lazy">
+              <div class="ready-card-overlay">
+                <div class="ready-card-eyebrow">
+                  <span>CONTACT US</span>
+                  <svg class="eyebrow-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </div>
+                <p class="ready-card-text">
+                  Great digital experiences begin with a conversation. Let's talk.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Blog & Articles Section ("Latest news from our blog.")
+         ========================================================================== -->
+    <section class="blog-articles-section" id="blog">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="blog-articles-header">
+          <div class="blog-articles-header-left">
+            <div class="blog-articles-eyebrow">
+              <span>ARTICLES</span>
+              <svg class="eyebrow-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+            <h2 class="blog-articles-title">Latest news from our blog.</h2>
+          </div>
+
+          <div class="blog-articles-header-right">
+            <div class="cta-journey-group cta-articles-group">
+              <a href="#blog" class="btn-journey-pill btn-articles-pill">View All Articles</a>
+              <a href="#blog" class="btn-journey-circle btn-articles-circle" aria-label="View All Articles">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Column Articles Grid -->
+        <div class="blog-articles-grid">
+          <!-- Card 1 -->
+          <article class="blog-article-card">
+            <a href="#blog" class="blog-article-media-link" aria-label="Virtual Models and Their Benefits for eCommerce Fashion">
+              <div class="blog-article-media">
+                <img src="assets/images/hero/Article/Sec1.png" 
+                     alt="Designer working with 3D models on computer screen" 
+                     width="400" 
+                     height="260" 
+                     loading="lazy">
+              </div>
+            </a>
+            <h3 class="blog-article-title">
+              <a href="#blog">Virtual Models and Their Benefits for eCommerce Fashion</a>
+            </h3>
+            <div class="blog-article-meta">
+              By <a href="#blog" class="blog-author">Olivie</a> &mdash; <time datetime="2026-05-02">May 2, 2026</time>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="blog-article-card">
+            <a href="#blog" class="blog-article-media-link" aria-label="The ROI of Empathy: What is Your Best Business Investment">
+              <div class="blog-article-media">
+                <img src="assets/images/hero/Article/Sec2.png" 
+                     alt="Post-it notes brainstorming wall" 
+                     width="400" 
+                     height="260" 
+                     loading="lazy">
+              </div>
+            </a>
+            <h3 class="blog-article-title">
+              <a href="#blog">The ROI of Empathy: What is Your Best Business Investment</a>
+            </h3>
+            <div class="blog-article-meta">
+              By <a href="#blog" class="blog-author">Olivie</a> &mdash; <time datetime="2026-07-07">July 7, 2026</time>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="blog-article-card">
+            <a href="#blog" class="blog-article-media-link" aria-label="The Secret Weapon for Scaling Global Digital Products">
+              <div class="blog-article-media">
+                <img src="assets/images/hero/Article/Sec3.png" 
+                     alt="Woman organizing mood and vision board on wall" 
+                     width="400" 
+                     height="260" 
+                     loading="lazy">
+              </div>
+            </a>
+            <h3 class="blog-article-title">
+              <a href="#blog">The Secret Weapon for Scaling Global Digital Products</a>
+            </h3>
+            <div class="blog-article-meta">
+              By <a href="#blog" class="blog-author">Lucas</a> &mdash; <time datetime="2026-08-15">Aug 15, 2026</time>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -966,79 +1323,120 @@
   </main>
 
   <!-- ==========================================================================
-       Site Footer (Using Figma Brand Vector)
+       Site Footer (Using Figma Brand Vector & Assets)
        ========================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-top">
-        <!-- Brand Info -->
-        <div class="footer-brand">
-          <a href="product-services.html" class="brand-logo" aria-label="ThePro3DStudio Home">
-            <img src="assets/images/hero/logo.svg" alt="ThePro3DStudio" class="brand-logo-img" width="220" height="42">
+      <!-- Top Grid: 5 Columns -->
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand Logo, Description, ISO Badges -->
+        <div class="footer-col-brand">
+          <a href="product-services.html" class="footer-logo-link" aria-label="ThePro3DStudio Home">
+            <img src="assets/images/hero/Footer/logo.svg" alt="ThePro3DStudio - Creative | Innovative | Futuristic" class="footer-logo-img" width="220" height="42">
           </a>
-          <p class="footer-desc">
-            ThePro3DStudio is an elite 3D modeling and rendering provider under MAP Systems Group. We deliver world-class photorealistic CGI solutions for global eCommerce, advertising, and manufacturing leaders.
+          <p class="footer-brand-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus fringilla nulla imperdiet sollicitudin.
           </p>
+          <div class="footer-iso-group">
+            <img src="assets/images/hero/Footer/ISO-1.png" alt="ISO 27001:2022 Certified Information Security Management System" class="footer-iso-badge" height="38" loading="lazy">
+            <img src="assets/images/hero/Footer/ISO-2.png" alt="ISO 9001:2015 Certified Quality Management System" class="footer-iso-badge" height="38" loading="lazy">
+          </div>
         </div>
 
-        <!-- Service Links -->
-        <div>
-          <h4 class="footer-heading">3D Services</h4>
-          <ul class="footer-links">
-            <li><a href="#services" class="footer-link">Product Rendering</a></li>
-            <li><a href="#services" class="footer-link">Lifestyle Scenes</a></li>
-            <li><a href="#services" class="footer-link">360° Interactive Views</a></li>
-            <li><a href="#services" class="footer-link">Augmented Reality (AR)</a></li>
-            <li><a href="#services" class="footer-link">Furniture 3D Modeling</a></li>
-            <li><a href="#services" class="footer-link">CAD Conversions</a></li>
+        <!-- Col 2: Services / Solutions / Industries / Careers / Sitemap -->
+        <div class="footer-col-nav">
+          <ul class="footer-nav-menu">
+            <li><a href="#services" class="footer-nav-link">Services</a></li>
+            <li><a href="#services" class="footer-nav-link">Solutions</a></li>
+            <li><a href="#industries" class="footer-nav-link">Industries</a></li>
+            <li><a href="#about" class="footer-nav-link">Careers</a></li>
+            <li><a href="#sitemap" class="footer-nav-link">Sitemap</a></li>
           </ul>
         </div>
 
-        <!-- Quick Links -->
-        <div>
-          <h4 class="footer-heading">Company</h4>
-          <ul class="footer-links">
-            <li><a href="#hero" class="footer-link">About Studio</a></li>
-            <li><a href="#process" class="footer-link">Workflow Pipeline</a></li>
-            <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
-            <li><a href="#faq" class="footer-link">FAQ Knowledgebase</a></li>
-            <li><a href="#contact" class="footer-link">Get a Quote</a></li>
+        <!-- Col 3: Testimonials / FAQs / Customers / News & Events / Case Studies -->
+        <div class="footer-col-nav">
+          <ul class="footer-nav-menu">
+            <li><a href="#testimonials" class="footer-nav-link">Testimonials</a></li>
+            <li><a href="#faq" class="footer-nav-link">FAQs</a></li>
+            <li><a href="#why-us" class="footer-nav-link">Customers</a></li>
+            <li><a href="#blog" class="footer-nav-link">News & Events</a></li>
+            <li><a href="#showcase" class="footer-nav-link">Case Studies</a></li>
           </ul>
         </div>
 
-        <!-- Global Contact Info -->
-        <div>
-          <h4 class="footer-heading">Contact Studio</h4>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <div>
-              <strong>Email:</strong><br>
-              <a href="mailto:hrd@mapsystems.com" class="footer-link">hrd@mapsystems.com</a>
-            </div>
+        <!-- Col 4: Contact Information -->
+        <div class="footer-col-contact">
+          <div class="footer-contact-info">
+            <div class="footer-contact-line"><a href="tel:+2125557888">+212 - 555-7888</a></div>
+            <div class="footer-contact-line"><a href="mailto:hello@thepro3dstudio.com">hello@thepro3dstudio.com</a></div>
+            <div class="footer-contact-gap"></div>
+            <div class="footer-contact-line footer-schedule-days">Monday - Saturday</div>
+            <div class="footer-contact-line footer-schedule-hours">9am - 5pm</div>
+            <div class="footer-contact-gap"></div>
+            <div class="footer-contact-line">245 Fifth Avenue, Suite 1900</div>
+            <div class="footer-contact-line">New York, NY 10016, USA</div>
           </div>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            <div>
-              <strong>Phone:</strong><br>
-              <a href="tel:+18003337890" class="footer-link">+1 (800) 333-7890</a>
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <div>
-              <strong>Delivery Centers:</strong><br>
-              <span>Bangalore, India &bull; North Carolina, USA</span>
-            </div>
+        </div>
+
+        <!-- Col 5: Social Media List with Arrows -->
+        <div class="footer-col-social">
+          <div class="footer-social-list">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <span class="footer-social-label">
+                <img src="assets/images/hero/Footer/footer-8-x.svg.svg" alt="Twitter" width="18" height="18" class="footer-social-icon">
+                <span>Twitter</span>
+              </span>
+              <span class="footer-social-arrow">↗</span>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <span class="footer-social-label">
+                <img src="assets/images/hero/Footer/orisa.svg" alt="Facebook" width="18" height="18" class="footer-social-icon">
+                <span>Facebook</span>
+              </span>
+              <span class="footer-social-arrow">↗</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <span class="footer-social-label">
+                <img src="assets/images/hero/Footer/orisa (1).svg" alt="LinkedIn" width="18" height="18" class="footer-social-icon">
+                <span>Linkedin</span>
+              </span>
+              <span class="footer-social-arrow">↗</span>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <span class="footer-social-label">
+                <img src="assets/images/hero/Footer/footer-8-ig.svg.svg" alt="Instagram" width="18" height="18" class="footer-social-icon">
+                <span>Instagram</span>
+              </span>
+              <span class="footer-social-arrow">↗</span>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-item">
+              <span class="footer-social-label">
+                <img src="assets/images/hero/Footer/footer-8-yt.svg.svg" alt="Youtube" width="18" height="18" class="footer-social-icon">
+                <span>Youtube</span>
+              </span>
+              <span class="footer-social-arrow">↗</span>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 ThePro3DStudio (MAP Systems). All Rights Reserved.</p>
-        <div class="footer-bottom-links">
-          <a href="#" class="footer-link">Privacy Policy</a>
-          <a href="#" class="footer-link">Terms of Service</a>
-          <a href="#" class="footer-link">Non-Disclosure Agreement (NDA)</a>
+      <!-- Middle Bracket Navigation Row -->
+      <nav class="footer-bracket-nav" aria-label="Footer Quick Navigation">
+        <a href="#hero" class="footer-bracket-item">[HOME]</a>
+        <a href="#about" class="footer-bracket-item">[ABOUT US]</a>
+        <a href="#showcase" class="footer-bracket-item">[PORTFOLIO]</a>
+        <a href="#blog" class="footer-bracket-item">[BLOG]</a>
+        <a href="#contact" class="footer-bracket-item">[CONTACT]</a>
+      </nav>
+
+      <!-- Bottom Bar: Copyright, Terms & Since 2010 -->
+      <div class="footer-bottom-row">
+        <p class="footer-legal-copy">
+          Complete content, including text and visuals in this website are copyrighted. Without prior consent from ThePro3DStudio, the information cannot be used by visitors in any manner. <a href="#">Privacy policy</a> | <a href="#">Terms of use</a> | Copyright &copy; 2026 ThePro3DStudio. All rights reserved.
+        </p>
+        <div class="footer-since-tag">
+          [ Since 2010 ]
         </div>
       </div>
     </div>
