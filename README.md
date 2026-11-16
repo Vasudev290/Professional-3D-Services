@@ -1,4 +1,6 @@
-# Web Developer Technical Assessment — MAP Systems
+# Professional-3D-Services
+
+## Web Developer Technical Assessment — ThePro3DStudio (MAP Systems)
 
 **Role:** Web Developer  
 **Experience Level:** 2 Years  

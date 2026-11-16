@@ -157,10 +157,10 @@
   background: var(--color-purple-btn);
   color: #ffffff;
   font-family: var(--font-family-base);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  width: 153px;
-  height: 43px;
+  width: 115px;
+  height: 33px;
   padding: 9px 28px;
   border-radius: var(--border-radius-full);
   text-decoration: none;
