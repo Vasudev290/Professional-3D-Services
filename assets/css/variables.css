@@ -3,7 +3,7 @@
    Typography: DM Sans 18pt globally
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400;1,9..40,600&display=swap');
 
 :root {
   /* Typography */
@@ -14,88 +14,80 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 
   /* Type Scale */
-  --font-size-hero: 2.75rem;    /* ~50px */
-  --font-size-h1: 2.25rem;      /* ~40px */
-  --font-size-h2: 1.875rem;     /* ~34px */
-  --font-size-h3: 1.5rem;       /* ~27px */
-  --font-size-h4: 1.25rem;      /* ~22px */
+  --font-size-hero: clamp(3.2rem, 7vw, 6.5rem); /* Giant "WE FRAME THE FUTURE" */
+  --font-size-h1: 2.75rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.65rem;
+  --font-size-h4: 1.35rem;
   --font-size-body: 18pt;       /* Requested global 18pt */
-  --font-size-body-sm: 0.95rem; /* ~17px for captions / small badges */
-  --font-size-xs: 0.85rem;      /* ~15px */
+  --font-size-body-sm: 1rem;    /* ~16px for secondary meta */
+  --font-size-xs: 0.85rem;
 
   /* Colors: Primary & Accent */
-  --color-primary: #1e3a8a;          /* Rich Navy */
-  --color-primary-dark: #0f172a;     /* Deep Slate / Dark Theme */
-  --color-primary-light: #3b82f6;    /* Vibrant Blue */
-  --color-accent: #0284c7;           /* Cerulean Blue */
-  --color-accent-hover: #0369a1;     /* Darker Accent */
-  --color-accent-subtle: #e0f2fe;    /* Soft Sky Tint */
+  --color-primary: #1e3a8a;
+  --color-primary-dark: #07090e;     /* Deep Midnight Black */
+  --color-purple-primary: #7928ca;   /* Vibrant Figma Purple */
+  --color-purple-light: #9333ea;
+  --color-purple-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  --color-purple-btn: linear-gradient(90deg, #6366f1, #a855f7);
+  --color-accent: #0284c7;
+  --color-accent-hover: #0369a1;
 
   /* Colors: Neutrals & Backgrounds */
-  --color-bg-page: #f8fafc;          /* Cool clean page background */
-  --color-bg-surface: #ffffff;       /* Pure white card/section surface */
-  --color-bg-subtle: #f1f5f9;        /* Subtle slate background */
-  --color-bg-dark: #090d16;          /* Deep midnight for footer/hero highlights */
+  --color-bg-page: #0b0f17;          /* Sleek Dark Mode */
+  --color-bg-surface: #121824;       /* Dark card surface */
+  --color-bg-subtle: #0f141f;
+  --color-bg-dark: #07090e;
   
   /* Colors: Text */
-  --color-text-main: #0f172a;        /* Deep Slate 900 */
-  --color-text-muted: #475569;       /* Slate 600 */
-  --color-text-light: #94a3b8;       /* Slate 400 */
-  --color-text-inverse: #ffffff;     /* Crisp white text */
+  --color-text-main: #f8fafc;        /* High-contrast white/slate */
+  --color-text-muted: #94a3b8;       /* Slate 400 */
+  --color-text-light: #64748b;       /* Slate 500 */
+  --color-text-inverse: #ffffff;
 
-  /* Colors: Status & Feedback */
+  /* Colors: Status */
   --color-success: #10b981;
-  --color-success-bg: #ecfdf5;
-  --color-success-border: #a7f3d0;
+  --color-success-bg: rgba(16, 185, 129, 0.1);
+  --color-success-border: #059669;
   --color-error: #ef4444;
-  --color-error-bg: #fef2f2;
-  --color-error-border: #fecaca;
-  --color-warning: #f59e0b;
+  --color-error-bg: rgba(239, 68, 68, 0.1);
+  --color-error-border: #dc2626;
 
-  /* Borders & Dividers */
-  --border-color: #e2e8f0;
-  --border-color-light: #f1f5f9;
-  --border-color-focus: #3b82f6;
+  /* Borders & Radii */
+  --border-color: #1e293b;
+  --border-color-light: #334155;
   --border-radius-sm: 6px;
   --border-radius-md: 12px;
-  --border-radius-lg: 18px;
-  --border-radius-xl: 24px;
+  --border-radius-lg: 20px;
   --border-radius-full: 9999px;
 
-  /* Box Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
-  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-  --shadow-card-hover: 0 16px 32px -4px rgba(30, 58, 138, 0.12);
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.6);
+  --shadow-purple: 0 8px 24px rgba(121, 40, 202, 0.35);
 
   /* Spacing Scale */
-  --space-xs: 0.5rem;    /* 8px */
-  --space-sm: 0.75rem;   /* 12px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 1.5rem;    /* 24px */
-  --space-xl: 2rem;      /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4.5rem;   /* 72px */
-  --space-4xl: 6rem;     /* 96px */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
 
-  /* Layout Widths */
-  --container-max-width: 1240px;
-  --container-narrow: 860px;
-  --header-height: 80px;
+  /* Layout */
+  --container-max-width: 1320px;
+  --header-height: 90px;
 
   /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* Z-Index */
-  --z-header: 1000;
-  --z-drawer: 1100;
-  --z-modal: 1200;
-  --z-toast: 1300;
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
 }
 
 body {
