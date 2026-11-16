@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Design Tokens & CSS Variables
+   Typography: DM Sans 18pt globally
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,600&display=swap');
+
+:root {
+  /* Typography */
+  --font-family-base: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-base: 18pt;
+  --line-height-base: 1.6;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Type Scale */
+  --font-size-hero: 2.75rem;    /* ~50px */
+  --font-size-h1: 2.25rem;      /* ~40px */
+  --font-size-h2: 1.875rem;     /* ~34px */
+  --font-size-h3: 1.5rem;       /* ~27px */
+  --font-size-h4: 1.25rem;      /* ~22px */
+  --font-size-body: 18pt;       /* Requested global 18pt */
+  --font-size-body-sm: 0.95rem; /* ~17px for captions / small badges */
+  --font-size-xs: 0.85rem;      /* ~15px */
+
+  /* Colors: Primary & Accent */
+  --color-primary: #1e3a8a;          /* Rich Navy */
+  --color-primary-dark: #0f172a;     /* Deep Slate / Dark Theme */
+  --color-primary-light: #3b82f6;    /* Vibrant Blue */
+  --color-accent: #0284c7;           /* Cerulean Blue */
+  --color-accent-hover: #0369a1;     /* Darker Accent */
+  --color-accent-subtle: #e0f2fe;    /* Soft Sky Tint */
+
+  /* Colors: Neutrals & Backgrounds */
+  --color-bg-page: #f8fafc;          /* Cool clean page background */
+  --color-bg-surface: #ffffff;       /* Pure white card/section surface */
+  --color-bg-subtle: #f1f5f9;        /* Subtle slate background */
+  --color-bg-dark: #090d16;          /* Deep midnight for footer/hero highlights */
+  
+  /* Colors: Text */
+  --color-text-main: #0f172a;        /* Deep Slate 900 */
+  --color-text-muted: #475569;       /* Slate 600 */
+  --color-text-light: #94a3b8;       /* Slate 400 */
+  --color-text-inverse: #ffffff;     /* Crisp white text */
+
+  /* Colors: Status & Feedback */
+  --color-success: #10b981;
+  --color-success-bg: #ecfdf5;
+  --color-success-border: #a7f3d0;
+  --color-error: #ef4444;
+  --color-error-bg: #fef2f2;
+  --color-error-border: #fecaca;
+  --color-warning: #f59e0b;
+
+  /* Borders & Dividers */
+  --border-color: #e2e8f0;
+  --border-color-light: #f1f5f9;
+  --border-color-focus: #3b82f6;
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 18px;
+  --border-radius-xl: 24px;
+  --border-radius-full: 9999px;
+
+  /* Box Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  --shadow-card-hover: 0 16px 32px -4px rgba(30, 58, 138, 0.12);
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 0.75rem;   /* 12px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4.5rem;   /* 72px */
+  --space-4xl: 6rem;     /* 96px */
+
+  /* Layout Widths */
+  --container-max-width: 1240px;
+  --container-narrow: 860px;
+  --header-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-Index */
+  --z-header: 1000;
+  --z-drawer: 1100;
+  --z-modal: 1200;
+  --z-toast: 1300;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-page);
+}

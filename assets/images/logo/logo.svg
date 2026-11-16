@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <!-- 3D Cube Icon -->
+  <g transform="translate(5, 5)">
+    <rect width="40" height="40" rx="8" fill="url(#logoGrad)" />
+    <!-- Isometric Cube Wireframe -->
+    <path d="M20 10 L31 16 L20 22 L9 16 Z" fill="#ffffff" opacity="0.9" />
+    <path d="M9 16 L20 22 L20 32 L9 26 Z" fill="#ffffff" opacity="0.75" />
+    <path d="M31 16 L20 22 L20 32 L31 26 Z" fill="#ffffff" opacity="0.6" />
+  </g>
+  <!-- Text Brand -->
+  <text x="56" y="28" font-family="'DM Sans', sans-serif" font-weight="700" font-size="20" fill="#0f172a">ThePro<tspan fill="#0284c7">3D</tspan>Studio</text>
+  <text x="56" y="42" font-family="'DM Sans', sans-serif" font-weight="500" font-size="10" fill="#64748b" letter-spacing="1">MAP SYSTEMS GROUP</text>
+</svg>
