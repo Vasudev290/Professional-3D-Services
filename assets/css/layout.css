@@ -162,7 +162,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.4);
+  box-shadow: none;
   transition: all var(--transition-normal);
   border: none;
   white-space: nowrap;
@@ -170,7 +170,7 @@
 
 .btn-get-started:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 22px rgba(168, 85, 247, 0.6);
+  box-shadow: none;
   background: linear-gradient(90deg, #4f46e5, #9333ea);
 }
 
