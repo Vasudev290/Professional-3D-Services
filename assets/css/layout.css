@@ -87,7 +87,7 @@
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-item {
@@ -97,13 +97,15 @@
 }
 
 .nav-link {
-  font-size: 18px;
-  font-weight: 700;
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: 500;
   color: #e2e8f0;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.25rem;
   padding: 0.5rem 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -128,7 +130,7 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
   flex-shrink: 0;
 }
 
@@ -150,13 +152,16 @@
   transform: scale(1.1);
 }
 
-/* Get Started Gradient Pill Button (Figma) */
+/* Get Started Gradient Pill Button (Figma: 153px x 43px, No Glow) */
 .btn-get-started {
   background: var(--color-purple-btn);
   color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 0.75rem 1.75rem;
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: 500;
+  width: 153px;
+  height: 43px;
+  padding: 0;
   border-radius: var(--border-radius-full);
   text-decoration: none;
   display: inline-flex;

@@ -27,17 +27,18 @@
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding-top: calc(var(--header-height) + 20px);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 145px;
   padding-bottom: var(--space-4xl);
   background: 
     linear-gradient(90deg, 
       rgba(7, 9, 14, 0.96) 0%, 
-      rgba(7, 9, 14, 0.88) 42%, 
-      rgba(7, 9, 14, 0.45) 75%, 
-      rgba(7, 9, 14, 0.65) 100%
+      rgba(7, 9, 14, 0.88) 12%, 
+      rgba(7, 9, 14, 0.45) 45%, 
+      rgba(7, 9, 14, 0.65) 50%
     ),
-    url('../images/hero/hero-bg.png') center right / cover no-repeat;
+    url('../images/hero/hero-bg.png') right center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -62,9 +63,9 @@
 .hero-title {
   font-family: var(--font-family-base);
   font-size: var(--font-size-hero);
-  font-weight: 800;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
+  font-weight: 900;
+  line-height: 0.99;
+  letter-spacing: 0.05em;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 1.75rem;
@@ -74,7 +75,7 @@
 /* Subtitle */
 .hero-subtitle {
   font-family: var(--font-family-base);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #cbd5e1;
   line-height: 1.6;
@@ -95,44 +96,55 @@
   flex-wrap: wrap;
 }
 
-/* Launch Experience Button with circular arrow */
+/* Launch Experience Button with circular arrow (Exact Figma - No Glow) */
 .btn-launch-exp {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  background: var(--color-purple-btn);
-  color: #ffffff;
-  padding: 0.85rem 1.85rem;
-  border-radius: var(--border-radius-full);
-  font-size: 1.15rem;
-  font-weight: 600;
+  gap: 10px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.45);
-  transition: all var(--transition-normal);
+  background: transparent;
   border: none;
+  box-shadow: none;
 }
 
-.btn-launch-exp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(168, 85, 247, 0.6);
-  background: linear-gradient(90deg, #4f46e5, #9333ea);
-}
-
-.arrow-circle {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--border-radius-full);
-  background: rgba(255, 255, 255, 0.2);
+.btn-launch-text {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.25rem;
-  transition: transform var(--transition-normal), background var(--transition-normal);
+  background: var(--color-purple-btn);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: var(--border-radius-full);
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: none;
+  transition: transform var(--transition-fast), background var(--transition-fast);
 }
 
+.arrow-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-full);
+  background: var(--color-purple-btn);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.btn-launch-exp:hover .btn-launch-text,
 .btn-launch-exp:hover .arrow-circle {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+
+.btn-launch-exp:hover .arrow-circle svg {
   transform: translate(2px, -2px);
-  background: rgba(255, 255, 255, 0.35);
 }
 
 /* See Case Studies Link */
