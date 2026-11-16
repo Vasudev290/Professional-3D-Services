@@ -63,24 +63,24 @@
 .hero-title {
   font-family: var(--font-family-base);
   font-size: var(--font-size-hero);
-  font-weight: 900;
-  line-height: 0.99;
-  letter-spacing: 0.05em;
+  font-weight: 800;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.25rem;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Subtitle */
+/* Subtitle (Exact Figma: #ffffff/60 and #ffffff/100, tight gap) */
 .hero-subtitle {
   font-family: var(--font-family-base);
   font-size: 1.25rem;
   font-weight: 400;
-  color: #cbd5e1;
-  line-height: 1.6;
-  margin-bottom: 2.75rem;
-  max-width: 580px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.55;
+  margin-bottom: 1.35rem;
+  max-width: 680px;
 }
 
 .hero-subtitle strong {
