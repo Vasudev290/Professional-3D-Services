@@ -315,26 +315,137 @@
     </section>
 
     <!-- ==========================================================================
-         Stats & Highlights Ribbon
+         About Us Section (Exact Figma Reference)
          ========================================================================== -->
-    <section class="stats-ribbon" aria-label="Key Performance Metrics">
+    <section class="section about-section" id="about" aria-label="About ThePro3DStudio">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-box">
-            <div class="stat-value">60%</div>
-            <div class="stat-text">Lower Cost vs. Physical Photoshoots</div>
+        <!-- Top Header: Eyebrow, Main Heading, Action Button -->
+        <div class="about-header">
+          <div class="about-header-left">
+            <span class="about-eyebrow">
+              ABOUT US
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+            <h2 class="about-title">
+              We Have A Team Of Professional 3D Product Designers Offering Exceptional Quality Designs Which Helping To Decrease Cost And Production Time.
+            </h2>
           </div>
-          <div class="stat-box">
-            <div class="stat-value">3.5x</div>
-            <div class="stat-text">Higher Engagement with 360° Spins</div>
+          <div class="about-header-right">
+            <a href="#services" class="btn-learn-more">
+              <span>Learn more</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
           </div>
-          <div class="stat-box">
-            <div class="stat-value">100%</div>
-            <div class="stat-text">Confidentiality & Signed NDAs</div>
+        </div>
+
+        <!-- 3-Column Content Grid -->
+        <div class="about-grid">
+          <!-- Column 1: P3D Logo, Description, 2x2 Stats Matrix -->
+          <div class="about-col about-col-intro">
+            <img src="assets/images/hero/What-We/Group.svg" alt="ThePro3DStudio Brand Mark" class="about-p3d-logo" width="41" height="25">
+            <p class="about-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur posuere ipsum ac tincidunt. In congue placerat orci, vel elementum odio pretium et. Aenean blandit nibh eu orci tincidunt tempor. Quisque sit amet metus ut ipsum tristique pellentesque. Aenean sollicitudin ligula non vestibulum ultricies.
+            </p>
+            <div class="about-stats-matrix">
+              <div class="about-stat-cell">
+                <div class="about-stat-num">100+</div>
+                <div class="about-stat-label">Experts Onboard</div>
+              </div>
+              <div class="about-stat-cell">
+                <div class="about-stat-num">14000+</div>
+                <div class="about-stat-label">Projects Delivered</div>
+              </div>
+              <div class="about-stat-cell">
+                <div class="about-stat-num stat-purple">15+</div>
+                <div class="about-stat-label">Years in Industry</div>
+              </div>
+              <div class="about-stat-cell">
+                <div class="about-stat-num stat-vibrant-purple">92%</div>
+                <div class="about-stat-label">Client Retention</div>
+              </div>
+            </div>
           </div>
-          <div class="stat-box">
-            <div class="stat-value">15+</div>
-            <div class="stat-text">Supported 3D & CAD Formats</div>
+
+          <!-- Column 2: Image Top + Creative Expertise Text Bottom -->
+          <div class="about-col about-col-card">
+            <div class="about-image-wrap">
+              <img src="assets/images/hero/What-We/about-designer.png" alt="Creative 3D Product Designer at workstation" class="about-photo" width="548" height="429" loading="lazy">
+            </div>
+            <div class="about-card-body">
+              <h3 class="about-card-title">Creative Expertise</h3>
+              <p class="about-card-text">
+                Morbi nec turpis convallis, maximus sem eu, accumsan metus. Ut ullamcorper, eros elementum luctus rhoncus, augue sem euismod magna, ut tempor magna nisi at nunc.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 3: Experience & Innovation Text Top + Image Bottom -->
+          <div class="about-col about-col-card">
+            <div class="about-card-body about-card-body-top">
+              <h3 class="about-card-title">Experience &amp; Innovation</h3>
+              <p class="about-card-text">
+                Morbi nec turpis convallis, maximus sem eu, accumsan metus. Ut ullamcorper, eros elementum luctus rhoncus, augue sem euismod magna, ut tempor magna nisi at nunc.
+              </p>
+            </div>
+            <div class="about-image-wrap">
+              <img src="assets/images/hero/What-We/about-vr.png" alt="Interactive 3D Virtual Reality Experience" class="about-photo" width="548" height="429" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Client / Brand Logos Ribbon -->
+        <div class="about-brands" aria-label="Trusted by Global Brands">
+          <div class="brand-item brand-snap">Snap Inc.</div>
+          <div class="brand-item brand-wayfair">
+            <svg class="brand-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <circle cx="12" cy="7" r="3"></circle>
+              <circle cx="7" cy="12" r="3"></circle>
+              <circle cx="17" cy="12" r="3"></circle>
+              <circle cx="12" cy="17" r="3"></circle>
+            </svg>
+            <span>wayfair</span>
+          </div>
+          <div class="brand-item brand-flipkart">
+            <svg class="brand-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Flipkart</span>
+          </div>
+          <div class="brand-item brand-intiaro">
+            <svg class="brand-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>INTIARO</span>
+          </div>
+          <div class="brand-item brand-midas">
+            <span class="midas-circle">midas</span>
+          </div>
+          <div class="brand-item brand-aurora">
+            <svg class="brand-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 3a9 9 0 0 1 9 9"></path>
+            </svg>
+            <span>aurora</span>
+          </div>
+          <div class="brand-item brand-snap">Snap Inc.</div>
+          <div class="brand-item brand-wayfair">
+            <svg class="brand-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <circle cx="12" cy="7" r="3"></circle>
+              <circle cx="7" cy="12" r="3"></circle>
+              <circle cx="17" cy="12" r="3"></circle>
+              <circle cx="12" cy="17" r="3"></circle>
+            </svg>
+            <span>wayfair</span>
           </div>
         </div>
       </div>
