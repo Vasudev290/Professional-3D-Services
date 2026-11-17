@@ -181,6 +181,78 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(updateTestArrowStates, 100);
   }
 
+  // Insights / Success Stories Carousel Controls (Figma Implementation)
+  const insightsTrack = document.getElementById('insightsTrack');
+  const insightsPrevBtn = document.getElementById('insightsPrevBtn');
+  const insightsNextBtn = document.getElementById('insightsNextBtn');
+  const insightsDots = document.querySelectorAll('.insights-dot');
+
+  if (insightsTrack) {
+    const getCardWidth = () => {
+      const card = insightsTrack.querySelector('.insights-card');
+      return card ? card.offsetWidth + 32 : 380;
+    };
+
+    if (insightsPrevBtn) {
+      insightsPrevBtn.addEventListener('click', () => {
+        insightsTrack.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+      });
+    }
+
+    if (insightsNextBtn) {
+      insightsNextBtn.addEventListener('click', () => {
+        insightsTrack.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+      });
+    }
+
+    insightsDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        insightsTrack.scrollTo({ left: index * getCardWidth(), behavior: 'smooth' });
+      });
+    });
+
+    const updateInsightsDots = () => {
+      const cardWidth = getCardWidth();
+      const activeIndex = Math.min(
+        insightsDots.length - 1,
+        Math.max(0, Math.round(insightsTrack.scrollLeft / cardWidth))
+      );
+      insightsDots.forEach((dot, idx) => {
+        dot.classList.toggle('is-active', idx === activeIndex);
+      });
+    };
+
+    insightsTrack.addEventListener('scroll', updateInsightsDots, { passive: true });
+    window.addEventListener('resize', updateInsightsDots);
+  }
+
+  // Interactive Captcha Generation & Verification
+  const captchaDisplay = document.getElementById('captchaDisplay');
+  const refreshCaptchaBtn = document.getElementById('refreshCaptchaBtn');
+  const captchaInput = document.getElementById('captchaInput');
+
+  if (captchaDisplay) {
+    const generateCaptcha = () => {
+      const chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnpqrstuvwxyz';
+      let code = '';
+      for (let i = 0; i < 4; i++) {
+        code += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return code;
+    };
+
+    let currentCaptcha = generateCaptcha();
+    captchaDisplay.textContent = currentCaptcha;
+
+    if (refreshCaptchaBtn) {
+      refreshCaptchaBtn.addEventListener('click', () => {
+        currentCaptcha = generateCaptcha();
+        captchaDisplay.textContent = currentCaptcha;
+        if (captchaInput) captchaInput.value = '';
+      });
+    }
+  }
+
   // Core Web Vitals Monitoring (Console log for QA and verification)
   if ('PerformanceObserver' in window) {
     try {
