@@ -1873,8 +1873,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 1.25rem;
   margin-top: 0.85rem;
+}
+
+.legacy-agreement-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 .legacy-agreement-label {
@@ -1882,7 +1889,12 @@
   align-items: flex-start;
   gap: 0.45rem;
   cursor: pointer;
-  flex: 1;
+  width: 100%;
+}
+
+#termsError {
+  margin-top: 0.35rem;
+  margin-left: 1.45rem;
 }
 
 .legacy-checkbox {
@@ -4045,3 +4057,51 @@
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   Task 6 – Performance & Core Web Vitals Optimization Rules
+   ========================================================================== */
+/* Content Visibility for Off-screen / Below-The-Fold Sections */
+.industries-section,
+.insights-section,
+.showcase-section,
+.testimonials-section,
+.ready-section,
+.articles-section,
+.faq-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 650px;
+}
+
+/* Hardware accelerated smooth scrolling for tracks */
+.industries-track,
+.insights-carousel-track,
+.showcase-track,
+.testimonials-track {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Deterministic aspect ratios to guarantee 0 Layout Shift (CLS) */
+.industry-card-img-wrap {
+  aspect-ratio: 225 / 300;
+}
+
+.insights-card-img-wrap {
+  aspect-ratio: 16 / 9;
+}
+
+.showcase-card-img {
+  aspect-ratio: 400 / 550;
+}
+
+.article-card-thumb-wrap {
+  aspect-ratio: 400 / 260;
+}
+
+.modeling-overview-img-wrap {
+  aspect-ratio: 678 / 510;
+}
+

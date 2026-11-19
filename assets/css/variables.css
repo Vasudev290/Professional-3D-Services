@@ -3,7 +3,7 @@
    Typography: DM Sans 18pt globally
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400;1,9..40,600&display=swap');
+/* DM Sans font loaded via high-performance non-blocking <link> in HTML <head> with preconnect */
 
 :root {
   /* Typography */

@@ -3,20 +3,27 @@
 # Task 5 & Task 6 Implementation
 # ==============================================================================
 
+# ------------------------------------------------------------------------------
+# Task 5: 301 Permanent Redirection from Old URL to New URL
+# Scenario:
+#   Old URL: https://professional3dservices.com/3d-rendering/product.html
+#   New URL: https://professional3dservices.com/3d-rendering/product-services.html
+# ------------------------------------------------------------------------------
+
+# Method 1: Using mod_alias (Standard Apache 301 Redirect)
+<IfModule mod_alias.c>
+    Redirect 301 /3d-rendering/product.html https://professional3dservices.com/3d-rendering/product-services.html
+</IfModule>
+
+# Method 2: Using mod_rewrite (Regex-based High-Precision Redirect Engine)
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # --------------------------------------------------------------------------
-    # Task 5: 301 Permanent Redirection from Old URL to New URL
-    # Old URL: https://professional3dservices.com/3d-rendering/product.html
-    # New URL: https://professional3dservices.com/3d-rendering/product-services.html
-    # --------------------------------------------------------------------------
-    
-    # Exact path match for the 3d-rendering subdirectory scenario
+    # Exact match redirect for the 3d-rendering directory
     RewriteRule ^3d-rendering/product\.html$ /3d-rendering/product-services.html [R=301,L,NC]
 
-    # Flexible rule matching when hosted directly inside the root or subdirectory
+    # Root / relative fallback match when hosted directly
     RewriteRule ^product\.html$ product-services.html [R=301,L,NC]
 
     # Enforce canonical non-trailing slash on HTML files
